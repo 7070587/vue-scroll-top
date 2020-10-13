@@ -20,7 +20,7 @@ npm i t-vue-scroll-top
 
 <script>
     
-import ScrollTop from './components/ScrollTop.vue';
+import ScrollTop from 't-vue-scroll-top';
 
 export default {
     name: 'App',   
