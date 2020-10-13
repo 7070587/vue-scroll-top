@@ -1,9 +1,9 @@
-# vue-scroll-top
+# t-vue-scroll-top
 
 ## Module Usage
 
 ```bash
-npm i vue-scroll-top
+npm i t-vue-scroll-top
 ```
 
 #### 
@@ -57,5 +57,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Other Notes
 
-1. npm url
+1. [npm url](https://www.npmjs.com/package/t-vue-scroll-top)
 2. [demo](https://github.com/7070587/vue-scroll-top)
