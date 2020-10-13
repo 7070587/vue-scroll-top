@@ -1,12 +1,30 @@
 {
-    "name": "project",
+    "name": "vue-scroll-top",
     "version": "0.1.0",
-    "private": true,
+    "author": "Tina.Lin <7070587@gmail.com>",
+    "private": false,
     "scripts": {
         "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build",
-        "start": "vue-cli-service serve"
+        "start": "vue-cli-service serve",
+        "prebuild": "node prebuild.js",
+        "build": "vue-cli-service build --target lib --name vue-scroll-top ./src/components/index.ts & npm run build:doc",
+        "build:doc": "vue-cli-service build ./src/main.js --dest docs --mode development",
+        "prepublish": "npm run build & npm run build:doc"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/7070587/vue-scroll-top"
+    },
+    "homepage": "https://github.com/zouyujie/vue-components/tree/master/jie-echarts",
+    "files": [
+        "dist/*",
+        "src/*",
+        "public/*"
+    ],
+    "keywords": [
+        "Vue",
+        "Scroll Top"
+    ],
     "dependencies": {
         "core-js": "^3.6.5",
         "vue": "^2.6.12",
