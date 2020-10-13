@@ -7,9 +7,10 @@
         "serve": "vue-cli-service serve",
         "start": "vue-cli-service serve",
         "prebuild": "node prebuild.js",
-        "build": "vue-cli-service build --target lib --name t-vue-scroll-top ./src/components/index.ts & npm run build:doc",
+        "build": "npm run lib & npm run build:doc",
         "build:doc": "vue-cli-service build ./src/main.ts --dest docs --mode development",
-        "prepublish": "npm run build & npm run build:doc"
+        "prepublish": "npm run build & npm run build:doc",
+        "lib": "vue-cli-service build --target lib --name t-vue-scroll-top ./src/components/index.ts"
     },
     "repository": {
         "type": "git",
