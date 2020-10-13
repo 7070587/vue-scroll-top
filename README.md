@@ -58,4 +58,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## Other Notes
 
 1. [npm url](https://www.npmjs.com/package/t-vue-scroll-top)
-2. [demo](https://github.com/7070587/vue-scroll-top)
+2. [demo](https://7070587.github.io/vue-scroll-top/)
