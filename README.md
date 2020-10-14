@@ -33,6 +33,22 @@ export default {
 
 
 
+#### shims-vue.d
+
+套件使用vue + ts寫， 安裝引入會有找不到module的錯誤，套件暫時找不到方法解決，暫提供短解：在shims-vue.d 加入 declare module "t-vue-scroll-top";
+
+```typescript
+declare module "*.vue" {
+  import Vue from "vue";
+  export default Vue;
+}
+
+declare module "t-vue-scroll-top";
+
+```
+
+
+
 ## Project setup
 
 ```
